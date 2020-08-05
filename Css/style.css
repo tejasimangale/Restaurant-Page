@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya|Allura&display=swap');
+/*-------------------------------Home------------*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: black;
+}
+a{
+    text-decoration: none;
+    color: gold;
+}
+/* --------------------header-------------------*/
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#logo{
+    margin-right: auto;
+    height: 60px;
+    width: 7%;
+}
+.nav-list li{
+    display: inline-block;
+    padding: 0 15px;
+    font-family: poppins;
+    font-size: 18px;
+}
+.nav-list li a:hover{
+    color: springgreen;
+}
+/*----------------------header end----------------------*/
+
+/*-------------------------main pic section-------------------*/
+.mainpic{
+    background-image: url(../Images/trial\ pic.jpg);
+    background-size: cover;
+    height: 90vh;
+    opacity: 70%;
+    z-index: 0;
+}
+.mainpic .blackstrip{
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    margin-top: 230px;
+    z-index: 1;
+    opacity: 80%;
+    animation-name: slide;
+    animation-duration: 3s;
+}
+@keyframes slide{
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.title{
+    color: gold;
+    text-align: center;
+    margin-top: -4%;
+}
+.title h1{
+    font-family: Dr Sugiyama;
+    font-size: 80px;
+    height: 70px;
+}
+.title h4{
+    font-family: Source Serif Pro;
+    font-size: 30px;
+}
+/*------------------main pic section ended-----------------*/
+
+/*------------------reviews section------------------*/
+ .review img{
+     height: 70px;
+ }
+section{
+    display: flex;
+    width: auto;
+}
+section .review-slides{
+    margin: 0 15px;
+    width: 80%;
+    padding: 20px;
+    border: 2px solid gold;
+}
+section .review-slides h3{
+    font-family: ;
+}
+
+/*-------------------------reviews end--------------------*/
+/*------------------footer------------------*/
+hr{
+    color: gold;
+}
+.footer-container{
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 80px;
+}
+.contact,
+.social-links{
+    margin-top: -20px;
+    flex: 1;
+}
+.contact span{
+    padding: 10px 0;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Alegreya;
+}
+.contact ul li{
+    display: flex;
+    align-items: center;
+}
+.contact ul li span:nth-child(1){
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.social-links h3{
+    font-size: 2rem;
+}
+.social-links p{
+    font-size: 1.1rem;
+    margin-top: -30px;
+}
+.contact .fas{
+    text-align: center;
+}
+.social-links h3,
+.social-links p{
+    padding: 10px 0;
+}
+
+.social-medias{
+    padding: 5px 0;
+}
+
+.social-medias .fab{
+    font-size: 1.8em;
+    padding: 10px;
+    margin-right: 10px;
+    color: gold;
+}
+/*------------------------footer ends----------*/
+/*-----------------------home page ends----------------*/
+
+/***********************************************************************************/
+
+/*------------------reservation page-------------*/
+body{
+    text-align: center;
+    color: gold;
+}
+.reserve{
+    height: 100px;
+    z-index: 2;
+}
+.time{
+    font-family: Source Serif Pro;
+}
+form{
+    padding: 5% 0;
+    background-image: url(../Images/trial\ pic.jpg);
+    margin-bottom: -0.5%;
+    z-index: 2;
+}
+.form-content{
+    position: relative;
+    border: 2px solid gold;
+    padding: 30px;
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    z-index: 2;
+    font-family: Allura;
+}
+form::after{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 38%;
+    width: 100%;
+    height: 690px;
+    background: rgba(0, 0, 0, 0.9);
+}
+.form-content input,select{
+    z-index: 3;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+.resbtn{
+    position: relative;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid gold;
+    outline: none;
+    padding: 7px 10px;
+    background: none;
+    color: gold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    z-index: 2;
+    font-family: Allura;
+}
+.resbtn:hover{
+    background: gold;
+    color: black;
+}
+hr{
+    position: relative;
+}
+/*----------------------reservation page end---------------------*/
+
+/***********************************************************************************/
+
+/*------------------------Menu page----------------------*/
+.Menu-icon{
+    height: 80px;
+}
+.menu-slides{
+    width: 80%;
+    height: 570px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.menu{
+    box-shadow: 0 0 5px gold;
+    width: 400px;
+}
+.menu img{
+    width: 400px;
+    height: 300px;
+}
+.types{
+    margin-top: 2%;
+}
+.types h3{
+    padding-top: 10px;
+    font-family: Algreya;
+    font-size: 2rem;
+}
+.slideshow{
+    width: 100%;
+    height: 627px;
+    overflow: hidden;
+}
+.navigation a{
+    width: 100%;
+    border: 1px solid gold;
+    color: gold;
+    border-radius: 10px;
+    padding: 0 5px;
+    font-size: 1.3rem;
+    margin: 7px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: Algreya;
+}
+.navigation a:hover{
+    color: black;
+    background: gold;
+}
+.types{
+    transition: 0.7s;
+}
+input[name="r"]{
+    visibility: hidden;
+}
+.menu-content h3,span{
+    font-size: 1.2rem;
+    font-family: Source Serif Pro;
+}
+ 
+/*------------------Menu page end-----------------------*/
