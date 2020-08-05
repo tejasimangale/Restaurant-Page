@@ -23,7 +23,7 @@
         <!-- <img src="./Images/trial pic.jpg" alt="background" class="back"> -->
         <img src="./Images/Reservation.png" alt="Reservation" class="reserve">
         <h2 class="time">9:00 AM - 10:00 PM</h2>
-        <form action="#">
+        <form action="#" class="resform">
             <div class="form-content">
                 <label for="name" class="item i1">Name:
                     <input type="text" required>
@@ -109,5 +109,8 @@
             </div>
         </div>
     </footer> 
+    <script>
+        document.getElementsByClassName('resform')[0].addEventListener("submit",e=>alert ("Reservation done"));
+    </script>
 </body>
 </html>
