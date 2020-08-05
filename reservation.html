@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savinne's Reservation</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Allura&family=Pacifico&family=Source+Serif+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="./Images/Logo.png" alt="Logo" id="logo">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#contact-us">Contact</a></li>
+                <li><a href="home.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <!-- <img src="./Images/trial pic.jpg" alt="background" class="back"> -->
+        <img src="./Images/Reservation.png" alt="Reservation" class="reserve">
+        <h2 class="time">9:00 AM - 10:00 PM</h2>
+        <form action="#">
+            <div class="form-content">
+                <label for="name" class="item i1">Name:
+                    <input type="text" required>
+                </label><br><br>
+                <label for="Contact" class="item i2">Contact no.:
+                    <input type="tel" maxlength="10" required>
+                </label><br><br>
+                <label for="date" class="item i3">Date:
+                    <input type="date" required>
+                </label><br><br>
+                <label for="time" class="item i4">Time:
+                    <input type="time"required>
+                </label><br><br>
+                <label for="people" class="item i5">No. of People:
+                    <select name="people" required>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">3</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="large party">Large party</option>
+                      </select>
+                </label><br>
+            </div>
+            <button type="submit" class="resbtn">Submit</button>
+        </form>
+    </main> 
+    <footer id="contact-us">
+        <hr>
+        <div class = "footer-container">
+            <div class = "contact">
+                <ul>
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></i></span>
+                        <span> Heaven's Street, nowhere</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span>+91 984503219</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span>savinnes_dine@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "social-links">
+                <h3>Let us serve you</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel debitis fuga, quo quidem molestias doloremque illum. Accusantium pariatur tenetur quisquam?</p>
+
+                <div class = "social-medias">
+                    <a href = "https://www.facebook.com">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+
+                    <a href = "https://www.twitter.com">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+
+                    <a href = "https://www.instagram.com">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a href = "https://www.linkedin.com">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
